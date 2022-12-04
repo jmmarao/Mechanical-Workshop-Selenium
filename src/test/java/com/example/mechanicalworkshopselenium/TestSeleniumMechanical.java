@@ -10,7 +10,7 @@ public class TestSeleniumMechanical {
     public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "src/driver/chromedriver");
         WebDriver driver = new ChromeDriver();
-        driver.get("file:/home/jones/Documents/repository/ifsp-projects/tc1/trabalho-parte2/VehicleSelenium/src/views/index.html");
+        driver.get("file:/home/jones/Documents/repository/ifsp-projects/tc1/Mechanical-Workshop-Selenium/MechanicalWorkshopSelenium/src/views/index.html");
         driver.manage().window().maximize();
 
         // Acesso ao link do github
