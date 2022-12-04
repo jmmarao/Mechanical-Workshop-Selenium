@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Minha Oficina Mecânica</title>
+</head>
+
+<body>
+
+<header>
+    <h1>MINHA OFICINA MECÂNICA</h1>
+</header>
+
+<nav>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="vehicle_page.html">Veículos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Mecânico</a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+    <section id="vehicle-section">
+        <h2>Cadastro de Veículos</h2>
+        <hr>
+        <div id="login-container">
+            <form id="login-info-form">
+                <h3>Dados da Placa</h3>
+                <p>
+                    <label for="lettersPlate">Letras: </label>
+                    <input type="text" id="lettersPlate">
+                </p>
+
+                <p>
+                    <label for="numbersPlate">Número: </label>
+                    <input type="text" id="numbersPlate">
+                </p>
+
+                <p>
+                    <label for="cityPlate">Cidade: </label>
+                    <input type="text" id="cityPlate">
+                </p>
+
+                <p>
+                    <label for="statePlate">Estado: </label>
+                    <input type="text" id="statePlate">
+                </p>
+                <hr>
+                <h3>Dados do Veículo</h3>
+                <div class="dropdown">
+                    <label for="vehicleType">Tipo: </label>
+                    <select class="btn btn-secondary dropdown-toggle" name="vehicleType" id="vehicleType">
+                        <option value="PICKUP">Pickup</option>
+                        <option value="SEDAN">Sedan</option>
+                        <option value="SPORT_CAR">Sport</option>
+                        <option value="SUV">SUV</option>
+                        <option value="TRUCK">Truck</option>
+                        <option value="VAN">Van</option>
+                    </select>
+                </div>
+
+                <p>
+                    <label for="brand">Marca: </label>
+                    <input type="text" id="brand">
+                </p>
+
+                <p>
+                    <label for="model">Modelo: </label>
+                    <input type="text" id="model">
+                </p>
+
+                <p>
+                    <label for="year">Ano: </label>
+                    <input type="number" id="year" min="1980">
+                </p>
+
+                <p>
+                    <label for="doors">Nº de Portas: </label>
+                    <input type="number" id="doors" min="1" max="4">
+                </p>
+                <p>
+                    <label for="seats">Nº de Assentos: </label>
+                    <input type="number" id="seats" min="4">
+                </p>
+
+                <p>Combustível:
+                    <input type="radio" id="ALCOHOL" name="fuelType" value="ALCOHOL">
+                    <label for="ALCOHOL">Álcool</label>
+                    <input type="radio" id="DIESEL" name="fuelType" value="DIESEL">
+                    <label for="DIESEL">Diesel</label>
+                    <input type="radio" id="FLEX" name="fuelType" value="FLEX">
+                    <label for="FLEX">Flex</label>
+                    <input type="radio" id="GAS" name="fuelType" value="GAS">
+                    <label for="GAS">Gasolina</label>
+                </p>
+
+                <p>
+                    <label for="color">Cor: </label>
+                    <input type="text" id="color" min="4">
+                </p>
+
+                <p>Acessórios:</p>
+                <input type="checkbox" id="LED" name="Led" value="led">
+                <label for="LED">Luz de led</label><br>
+                <input type="checkbox" id="LEATHER" name="Leather" value="leather">
+                <label for="LEATHER">Banco de couro</label><br>
+                <input type="checkbox" id="AIR" name="Air" value="air">
+                <label for="AIR">Ar condicionado</label><br>
+                <button type="submit" class="btn btn-success">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!--    private String accessories;-->
+
+
+</main>
+
+<footer>
+    <p>
+        Página web desenvolvida na disciplina de Tópicos em Computação I pelos alunos:
+        <a href="https://github.com/jmmarao">João Mateus Marão Domingues</a> &
+        <a href="https://github.com/souzafcharles">Charles Fernandes de Souza</a>
+    </p>
+</footer>
+</body>
+
+</html>
