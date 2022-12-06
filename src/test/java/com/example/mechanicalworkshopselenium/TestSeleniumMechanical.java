@@ -15,7 +15,7 @@ public class TestSeleniumMechanical {
 
         // Acesso ao link do github
         driver.findElement(By.linkText("Charles Fernandes de Souza")).click();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
         driver.navigate().back();
         Thread.sleep(2000);
 
